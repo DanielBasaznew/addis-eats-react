@@ -1,0 +1,493 @@
+/* ==========================================================================
+   ADDIS EATS — SKELETON LOADING SYSTEM
+   Warm Heritage Shimmer Animations & Structural Placeholders
+   ========================================================================== */
+
+/* 1. Base Skeleton & Shimmer Keyframes */
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes skeleton-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.skeleton {
+  display: block;
+  background-color: var(--color-surface-secondary, #f6f0eb);
+  background-image: linear-gradient(
+    90deg,
+    var(--color-surface-secondary, #f6f0eb) 0%,
+    var(--color-surface-tertiary, #ede4dc) 25%,
+    var(--color-surface-secondary, #f6f0eb) 50%,
+    var(--color-surface-tertiary, #ede4dc) 75%,
+    var(--color-surface-secondary, #f6f0eb) 100%
+  );
+  background-size: 400% 100%;
+  animation: skeleton-shimmer 2s ease-in-out infinite;
+  border-radius: var(--radius-sm, 6px);
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Dark Theme Shimmer */
+[data-theme='dark'] .skeleton,
+.dark .skeleton {
+  background-color: var(--color-surface-low, #2b2623);
+  background-image: linear-gradient(
+    90deg,
+    var(--color-surface-low, #2b2623) 0%,
+    var(--color-surface-high, #3d3530) 25%,
+    var(--color-surface-low, #2b2623) 50%,
+    var(--color-surface-high, #3d3530) 75%,
+    var(--color-surface-low, #2b2623) 100%
+  );
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .skeleton {
+    animation: skeleton-pulse 2s ease-in-out infinite;
+    background-image: none;
+  }
+}
+
+/* Variants */
+.skeleton-text {
+  height: 0.9em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  border-radius: 4px;
+}
+
+.skeleton-text.heading-lg {
+  height: 1.8rem;
+  border-radius: 6px;
+}
+
+.skeleton-text.heading-md {
+  height: 1.35rem;
+  border-radius: 6px;
+}
+
+.skeleton-text.heading-sm {
+  height: 1.1rem;
+  border-radius: 4px;
+}
+
+.skeleton-pill {
+  border-radius: var(--radius-pill, 9999px);
+}
+
+.skeleton-circular {
+  border-radius: 50%;
+}
+
+.skeleton-rectangular {
+  border-radius: var(--radius-md, 10px);
+}
+
+/* 2. Dish Card Skeleton */
+.dish-card-skeleton {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e6ded7);
+  border-radius: var(--radius-lg, 16px);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(30, 27, 25, 0.05));
+  width: 100%;
+}
+
+.dish-card-skeleton-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--color-surface-secondary, #f6f0eb);
+}
+
+.dish-card-skeleton-badge {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  width: 5.5rem;
+  height: 1.25rem;
+  border-radius: var(--radius-sm, 6px);
+}
+
+.dish-card-skeleton-status {
+  position: absolute;
+  bottom: 0.85rem;
+  left: 0.85rem;
+  width: 4.8rem;
+  height: 1.25rem;
+  border-radius: var(--radius-sm, 6px);
+}
+
+.dish-card-skeleton-fav {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 50%;
+}
+
+.dish-card-skeleton-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1.35rem;
+}
+
+.dish-card-skeleton-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.dish-card-skeleton-title {
+  width: 65%;
+  height: 1.4rem;
+  border-radius: 6px;
+}
+
+.dish-card-skeleton-price {
+  width: 25%;
+  height: 1.4rem;
+  border-radius: 6px;
+}
+
+.dish-card-skeleton-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1.15rem;
+}
+
+.dish-card-skeleton-desc-line {
+  height: 0.85rem;
+  border-radius: 4px;
+}
+
+.dish-card-skeleton-ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.15rem;
+}
+
+.dish-card-skeleton-chip {
+  width: 4.5rem;
+  height: 1.35rem;
+  border-radius: var(--radius-sm, 6px);
+}
+
+.dish-card-skeleton-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border, #e6ded7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.dish-card-skeleton-link {
+  width: 6.5rem;
+  height: 2rem;
+  border-radius: var(--radius-sm, 6px);
+}
+
+.dish-card-skeleton-btn {
+  width: 6rem;
+  height: 2rem;
+  border-radius: var(--radius-sm, 6px);
+}
+
+/* 3. Category Bar Skeleton */
+.category-bar-skeleton {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  overflow-x: auto;
+  padding: 0.4rem 0 0.85rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+}
+
+.category-bar-skeleton::-webkit-scrollbar {
+  display: none;
+}
+
+.category-pill-skeleton {
+  height: 2.35rem;
+  flex-shrink: 0;
+  border-radius: var(--radius-pill, 9999px);
+}
+
+/* 4. Dish Detail Skeleton */
+.dish-detail-skeleton-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  width: 100%;
+}
+
+.detail-breadcrumb-skeleton {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 1.5rem;
+}
+
+.breadcrumb-skeleton-item {
+  height: 1rem;
+  border-radius: 4px;
+}
+
+.detail-layout-skeleton {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+  background: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e6ded7);
+  border-radius: var(--radius-lg, 16px);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(30, 27, 25, 0.05));
+  width: 100%;
+}
+
+.detail-visual-skeleton {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md, 10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.detail-info-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.detail-header-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.detail-eyebrow-skeleton {
+  width: 7rem;
+  height: 0.95rem;
+  border-radius: 4px;
+}
+
+.detail-title-skeleton {
+  width: 85%;
+  height: 2.6rem;
+  border-radius: 8px;
+}
+
+.detail-price-row-skeleton {
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+}
+
+.detail-price-skeleton {
+  width: 6.5rem;
+  height: 2.2rem;
+  border-radius: 6px;
+}
+
+.detail-portion-skeleton {
+  width: 10rem;
+  height: 1.1rem;
+  border-radius: 4px;
+}
+
+.detail-desc-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.detail-desc-line-skeleton {
+  height: 1rem;
+  border-radius: 4px;
+}
+
+.detail-chips-section-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-chips-row-skeleton {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.detail-chip-skeleton {
+  width: 5.5rem;
+  height: 1.75rem;
+  border-radius: var(--radius-sm, 6px);
+}
+
+.detail-action-panel-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--color-border, #e6ded7);
+}
+
+.detail-stepper-skeleton-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail-stepper-skeleton-box {
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: var(--radius-sm, 6px);
+}
+
+.detail-btn-skeleton-row {
+  display: flex;
+  gap: 0.85rem;
+}
+
+.detail-btn-skeleton-main {
+  flex-grow: 1;
+  height: 3rem;
+  border-radius: var(--radius-md, 10px);
+}
+
+/* 5. Admin Dishes Table Skeleton */
+.admin-table-skeleton-container {
+  background: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e6ded7);
+  border-radius: var(--radius-lg, 16px);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(30, 27, 25, 0.05));
+  width: 100%;
+}
+
+.admin-table-skeleton-row {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--color-border, #e6ded7);
+  gap: 1.25rem;
+}
+
+.admin-table-skeleton-row:last-child {
+  border-bottom: none;
+}
+
+.admin-table-skeleton-dish-col {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex: 3;
+}
+
+.admin-table-skeleton-thumb {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm, 6px);
+  flex-shrink: 0;
+}
+
+.admin-table-skeleton-dish-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex-grow: 1;
+}
+
+.admin-table-skeleton-dish-name {
+  width: 60%;
+  height: 1.1rem;
+  border-radius: 4px;
+}
+
+.admin-table-skeleton-dish-desc {
+  width: 85%;
+  height: 0.8rem;
+  border-radius: 4px;
+}
+
+.admin-table-skeleton-category-col {
+  flex: 1.5;
+}
+
+.admin-table-skeleton-badge {
+  width: 5rem;
+  height: 1.4rem;
+  border-radius: var(--radius-sm, 6px);
+}
+
+.admin-table-skeleton-price-col {
+  flex: 1.2;
+}
+
+.admin-table-skeleton-price {
+  width: 4rem;
+  height: 1.2rem;
+  border-radius: 4px;
+}
+
+.admin-table-skeleton-status-col {
+  flex: 1.5;
+}
+
+.admin-table-skeleton-status {
+  width: 5.5rem;
+  height: 1.5rem;
+  border-radius: var(--radius-pill, 9999px);
+}
+
+.admin-table-skeleton-actions-col {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  flex: 2;
+}
+
+.admin-table-skeleton-btn {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-sm, 6px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .detail-layout-skeleton {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+}

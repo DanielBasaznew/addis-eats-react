@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Stitch Warm Heritage Editorial Tokens - Light */
+  --color-bg: #fff8f5;
+  --color-surface: #fff8f5;
+  --color-surface-lowest: #ffffff;
+  --color-surface-low: #faf2ee;
+  --color-surface-mid: #f4ece8;
+  --color-surface-high: #eee7e3;
+  --color-surface-highest: #e9e1dd;
+  --color-on-surface: #1e1b19;
+  --color-on-surface-variant: #57423b;
+  --color-primary: #9f3c16;
+  --color-primary-hover: #bf542c;
+  --color-secondary: #7f5700;
+  --color-secondary-container: #fdba45;
+  --color-tertiary: #964331;
+  --color-outline: #8a726a;
+  --color-outline-variant: #dec0b7;
+  --color-border: #eae4da;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  color: var(--color-on-surface);
+  background-color: var(--color-bg);
+}
+
+[data-theme='dark'],
+.dark {
+  color-scheme: dark;
+
+  /* Stitch Warm Heritage Editorial Tokens - Dark */
+  --color-bg: #1a1715;
+  --color-surface: #1a1715;
+  --color-surface-lowest: #231f1c;
+  --color-surface-low: #2b2623;
+  --color-surface-mid: #332c28;
+  --color-surface-high: #3d3530;
+  --color-surface-highest: #473e38;
+  --color-on-surface: #f7efeb;
+  --color-on-surface-variant: #dec0b7;
+  --color-primary: #c85a32;
+  --color-primary-hover: #ffb59c;
+  --color-secondary: #d99b26;
+  --color-secondary-container: #fdba45;
+  --color-tertiary: #ffb4a4;
+  --color-outline: #8a726a;
+  --color-outline-variant: #3d3530;
+  --color-border: #332c28;
+
+  color: var(--color-on-surface);
+  background-color: var(--color-bg);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  color: var(--color-on-surface);
+  font-family: var(--font-sans);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Accessible screen-reader-only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Enhanced focus indicators for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+}
+

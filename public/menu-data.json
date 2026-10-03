@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Doro Wat",
+    "description": "Rich, slow-simmered chicken stew with berbere spice, seasoned butter (niter kibbeh), and a hard-boiled egg. Served with fresh injera.",
+    "price": 450,
+    "category": "Traditional",
+    "image": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1024/https://samracooks.com/wp-content/uploads/2023/06/20230618_124055-1024x577.jpg",
+    "ingredients": ["Free-range Chicken", "Berbere Spice Blend", "Niter Kibbeh (Spiced Butter)", "Hard-boiled Egg", "Caramelized Red Onions", "Garlic & Ginger", "Injera"],
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Special Beef Tibs",
+    "description": "Succulent sautéed beef cubes tossed with fresh rosemary, garlic, sliced red onions, and jalapeños in seasoned butter.",
+    "price": 380,
+    "category": "Meat & Grill",
+    "image": "https://www.thefooddictator.com/wp-content/uploads/2025/05/lambtibs.jpeg",
+    "ingredients": ["Prime Beef Tenderloin", "Rosemary", "Niter Kibbeh", "Garlic", "Red Onions", "Green Jalapeños", "Awaze Paste"],
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "Shiro Tegabino",
+    "description": "Clay-pot simmered spiced chickpea flour stew enriched with garlic, ginger, and aromatic clarified butter or olive oil.",
+    "price": 220,
+    "category": "Vegetarian",
+    "image": "https://i.ibb.co/bMF2mNX3/30557522baf1.jpg",
+    "ingredients": ["Sun-dried Roasted Chickpea Flour (Shiro)", "Garlic", "Ginger", "Niter Kibbeh or Olive Oil", "Tomatoes", "Green Chili", "Injera"],
+    "available": true
+  },
+  {
+    "id": 4,
+    "name": "Addis Special Kitfo",
+    "description": "Finely minced prime lean beef seasoned with mitmita chili powder and spiced herb butter (niter kibbeh), served with ayib cheese and gomen.",
+    "price": 420,
+    "category": "Traditional",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyLfowUAvX0qM6vYAOJCCLd0ncOYIGEAM4zx8-t0_GajGSUxnxlb2l6EE&s=10",
+    "ingredients": ["Prime Minced Beef", "Mitmita (Cardamom Chili)", "Koseret Herb Butter", "Ayib (Cottage Cheese)", "Steamed Collard Greens", "Kocho Flatbread"],
+    "available": true
+  },
+  {
+    "id": 5,
+    "name": "Yetsom Beyaynetu",
+    "description": "Colorful vegetarian platter featuring misir wat (red lentils), kik alicha (yellow split peas), gomen (collard greens), fasolia, and beet salad on injera.",
+    "price": 260,
+    "category": "Vegetarian",
+    "image": "https://media.licdn.com/dms/image/v2/D4E22AQEk0CiwD2Gf2A/feedshare-image-high-res/B4EZT1XzV6HMA0-/0/1739283445811?e=2147483647&v=beta&t=jy0N0uVKeMHKJ2iGgW4WCG-DLDZ2fn8Nb6wWv4QWFo8",
+    "ingredients": ["Red Lentils (Misir)", "Yellow Split Peas (Kik)", "Collard Greens (Gomen)", "Green Beans & Carrots (Fasolia)", "Beets & Potato Salad", "Shiro", "Injera"],
+    "available": true
+  },
+  {
+    "id": 6,
+    "name": "Chechebsa (Kita Firfir)",
+    "description": "Shredded handmade flatbread pan-fried with spicy berbere and warm clarified spiced butter, drizzled with raw honey.",
+    "price": 180,
+    "category": "Breakfast",
+    "image": "https://typicalethiopian.com/wp-content/uploads/2022/03/Chechebsa-made-with-paprika.jpg",
+    "ingredients": ["Handmade Wheat Kita Flatbread", "Berbere", "Niter Kibbeh", "Pure Blossom Honey", "Organic Yogurt (Optional)"],
+    "available": true
+  },
+  {
+    "id": 7,
+    "name": "Gomen be Sega",
+    "description": "Tender beef pieces braised slowly with seasoned collard greens, ginger, garlic, and sliced green chilies.",
+    "price": 320,
+    "category": "Meat & Grill",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzO-Q2HJ0Z3Mja9XdIKtT3F_641NU_a9e454p16tpII7MnI83g7QZaq0c&s=10",
+    "ingredients": ["Braised Beef Chuck", "Chopped Collard Greens (Gomen)", "Garlic", "Ginger", "Niter Kibbeh", "Green Peppers"],
+    "available": true
+  },
+  {
+    "id": 8,
+    "name": "Derek Tibs",
+    "description": "Crispy pan-seared beef ribs and cubes seasoned with rosemary and black pepper, served sizzling over hot coals with awaze dip.",
+    "price": 400,
+    "category": "Meat & Grill",
+    "image": "https://i0.wp.com/myannoyingopinions.com/wp-content/uploads/2022/10/bole-derek-tibs.jpg?fit=900%2C600&ssl=1",
+    "ingredients": ["Crispy Beef Cuts", "Fresh Rosemary Sprigs", "Coarse Sea Salt", "Cracked Black Pepper", "Awaze Sauce", "Jalapeño Slices"],
+    "available": true
+  },
+  {
+    "id": 9,
+    "name": "Misir Wat",
+    "description": "Hearty red split lentils slow-cooked in a spicy berbere reduction with aromatic onions, garlic, and fresh herbs.",
+    "price": 200,
+    "category": "Vegetarian",
+    "image": "https://thumbs.dreamstime.com/b/traditional-ethiopian-misir-wot-red-lentil-stew-injera-close-up-shot-authentic-ethiopian-misir-wot-rich-savory-red-398960581.jpg",
+    "ingredients": ["Red Split Lentils", "Berbere Spices", "Red Onions", "Garlic", "Ginger", "Vegetable Oil", "Injera"],
+    "available": true
+  },
+  {
+    "id": 10,
+    "name": "Quanta Firfir",
+    "description": "Sun-dried seasoned cured beef jerky cooked in spicy berbere sauce and tossed with torn pieces of fresh injera.",
+    "price": 290,
+    "category": "Breakfast",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT81Lcdnxmo7F5-R2DlE3jjtmtPLIAmQ06-SDvnSUKEQqouOZNLE5K1d7I&s=10",
+    "ingredients": ["Cured Sun-dried Beef (Quanta)", "Torn Injera", "Berbere", "Niter Kibbeh", "Garlic", "Green Chilies"],
+    "available": true
+  },
+  {
+    "id": 11,
+    "name": "Bozena Shiro",
+    "description": "Smooth, aromatic roasted chickpea stew cooked with finely chopped succulent beef cubes and seasoned butter.",
+    "price": 280,
+    "category": "Meat & Grill",
+    "image": "https://d1w7312wesee68.cloudfront.net/kWSDwFAyNwFQP6nmbXq7QJ__9zVy0dBNM2yyhSp-St4/resize:fit:720:720/plain/s3://toasttab/menu_service/restaurants/cfc9a4e3-ced1-45dd-ac49-770ee59f3861/MenuItem/ad97fecb-88b4-4c30-93d5-c4081abc2d54.jpg",
+    "ingredients": ["Roasted Chickpea Flour (Shiro)", "Minced Beef Cubes", "Niter Kibbeh", "Garlic", "Ginger", "Injera"],
+    "available": true
+  },
+  {
+    "id": 12,
+    "name": "Kik Alicha",
+    "description": "Mild and comforting yellow split pea stew gently simmered with turmeric, garlic, ginger, and sweet onions.",
+    "price": 190,
+    "category": "Vegetarian",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_1CEkny4uqlEmedKWGgFU5HtRr-P-SGl45Xzu7BH2tvMf1opXtr-PqsQ&s=10",
+    "ingredients": ["Yellow Split Peas (Kik)", "Ground Turmeric", "Red Onions", "Garlic", "Ginger", "Olive Oil", "Injera"],
+    "available": true
+  },
+  {
+    "id": 13,
+    "name": "Zilzil Tibs",
+    "description": "Tender long strips of marinated beef seared in a traditional clay dish with onions, rosemary, and awaze dip.",
+    "price": 390,
+    "category": "Meat & Grill",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF3f56bmIzhCYG8zHAe8I90v2o-uH-Av3DdOH2osPkBxx85D0xSDMgIgvs&s=10",
+    "ingredients": ["Strip Beef Fillet", "Rosemary", "Garlic Puree", "Red Onions", "Niter Kibbeh", "Awaze Chili Dip"],
+    "available": true
+  },
+  {
+    "id": 14,
+    "name": "Kinche (Cracked Wheat)",
+    "description": "Cracked bulgur wheat boiled to perfection and tossed with fragrant spiced clarified butter and a touch of sea salt.",
+    "price": 150,
+    "category": "Breakfast",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiqOVGbs3Z46A2vRriINFbPEb5Icr4dr1xx8ZW2_HAQ-RqclgjneTxM0So&s=10",
+    "ingredients": ["Cracked Bulgur Wheat", "Niter Kibbeh (Spiced Butter)", "Sea Salt", "Cardamom"],
+    "available": true
+  },
+  {
+    "id": 15,
+    "name": "Shifinfin Special",
+    "description": "Traditional layered feast of spicy meat firfir crowned with kitfo, hard-boiled eggs, and creamy ayib cheese.",
+    "price": 480,
+    "category": "Traditional",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNYErmLrU_Jxs4tmKoyuZezAsx_3j-wwEPfYR1snU6cGWxQxNeor0Oi3Su&s=10",
+    "ingredients": ["Beef Stew Firfir", "Fresh Minced Kitfo", "Hard-boiled Eggs", "Ayib Cheese", "Spiced Butter", "Injera"],
+    "available": true
+  },
+  {
+    "id": 16,
+    "name": "Fasolia be Karot",
+    "description": "Tender whole green beans and sweet carrot slices stir-fried with caramelized red onions, garlic, and mild spices.",
+    "price": 190,
+    "category": "Vegetarian",
+    "image": "https://www.commonthreads.org/wp-content/uploads/2021/08/IMG_9957-compressed-scaled-1.jpg",
+    "ingredients": ["Fresh Green String Beans", "Sliced Carrots", "Red Onions", "Garlic", "Tomato Purée", "Olive Oil"],
+    "available": true
+  },
+  {
+    "id": 17,
+    "name": "Traditional Dulet",
+    "description": "Pan-seared spiced delicacy prepared with minced lean meat, liver, tripe, red onions, mitmita chili, and herbal butter.",
+    "price": 310,
+    "category": "Traditional",
+    "image": "https://9e91e5c506ad39de80e9.cdn6.editmysite.com/uploads/b/9e91e5c506ad39de80e9c751ec054e78444d6878d0878e7e670385f7ab587eff/Screen%20Shot%202021-05-08%20at%207.22.43%20PM_1620516311.png?width=2400&optimize=medium",
+    "ingredients": ["Minced Beef & Liver", "Mitmita Spice", "Niter Kibbeh", "Red Onions", "Green Jalapeños", "Lemon Juice"],
+    "available": true
+  },
+  {
+    "id": 18,
+    "name": "Spris Fresh Juice",
+    "description": "Layered tropical fresh fruit smoothie with blended mango, avocado, and papaya served with a squeeze of fresh lime.",
+    "price": 120,
+    "category": "Beverages",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvTKUW6oagc6SIud2n5_ILzkCb6JceLQwJL_9dvQ-EOYmsWIKcnDJgrDo&s=10",
+    "ingredients": ["Ripe Avocado", "Sweet Mango", "Papaya", "Fresh Lime Juice", "Natural Cane Sugar"],
+    "available": true
+  },
+  {
+    "id": 19,
+    "name": "Traditional Coffee Ceremony (Buna)",
+    "description": "Freshly roasted and brewed single-origin Ethiopian coffee served from a clay jebena pot with burning incense and popcorn.",
+    "price": 90,
+    "category": "Beverages",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcClrQ2X9h1izfPyGq4VtoCmKPKPYb9FvGwk5B8YzTxzxdmJW4uP4va_Y&s=10",
+    "ingredients": ["Single-Origin Yirgacheffe Coffee Beans", "Cardamom & Cloves (Optional)", "Fresh Roasted Popcorn", "Tenadam (Rue Herb)"],
+    "available": true
+  },
+  {
+    "id": 20,
+    "name": "Baklava with Spiced Honey",
+    "description": "Flaky golden filo pastry layers filled with crushed walnuts and almonds, drenched in spiced cardamom and clove honey syrup.",
+    "price": 160,
+    "category": "Dessert",
+    "image": "https://tornadoughalli.com/wp-content/uploads/2022/11/BAKLAVA-RECIPE-2-1-500x375.jpg",
+    "ingredients": ["Filo Dough", "Crushed Walnuts & Almonds", "Clarified Butter", "Cardamom & Clove Infused Honey Syrup", "Cinnamon"],
+    "available": true
+  }
+]
